@@ -1,4 +1,4 @@
-import { Request } from './class';
+import { Request } from './ron-swanson-business';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';

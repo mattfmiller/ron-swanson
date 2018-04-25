@@ -18,6 +18,7 @@
 * To bundle and build project distribution folder, run npm run build
 * To view Jasmine tests, run npm test
 * To view project in development mode, run npm start
+* create .env that contains 'GIPHY_API=[YOUR GIPHY API_KEY]'
 
 ## Known Bugs
 
