@@ -20,5 +20,6 @@ $(document).ready(function() {
   $('#give-me-ron').click(function() {
     let request = new Request();
     request.apiCall(displayGif, displayError);
+    request.jQueryCall(displayQuote, displayError);
   });
 });

@@ -2,6 +2,7 @@ import $ from 'jquery';
 
 class Request {
 
+  // JavaScript ES6 Promise
   apiCall(displayGif, displayError) {
     let promise = new Promise(function(resolve, reject) {
       let request = new XMLHttpRequest();
@@ -23,6 +24,15 @@ class Request {
       let result = JSON.parse(response);
       displayGif(result);
     }, function(error) {
+      displayError(error);
+    });
+  }
+
+  // jQuery Promise
+  jQueryCall (displayQuote,displayError) {
+    $.get('http://ron-swanson-quotes.herokuapp.com/v2/quotes').then(function(response) {
+      displayQuote(response);
+    }).fail(function(error) {
       displayError(error);
     });
   }
